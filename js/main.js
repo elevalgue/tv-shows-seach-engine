@@ -4,6 +4,8 @@
 
 const favList = document.querySelector('.js-favourite-titles-list');
 
+const showsContainer = document.querySelector('.js-shows-container');
+
 let results = [];
 let favourites = [];
 
@@ -16,8 +18,7 @@ function paintShows() {
     const newLi = document.createElement('li');
     showsList.appendChild(newLi);
     //añado la imagen
-    // addImage; // me tengo que crear una función para poder obtener la imagen?
-    //añado h3
+    // addImage; // me tengo que crear una función para poder obtener la imagen
     const newTitle = document.createElement('h3');
     newLi.appendChild(newTitle);
     newTitle.innerHTML = result.show.name;
