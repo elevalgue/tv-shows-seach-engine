@@ -19,10 +19,19 @@ function paintShows() {
     showsList.appendChild(newLi);
     //añado la imagen
     // addImage; // me tengo que crear una función para poder obtener la imagen
+    insertImage(result, newLi);
+    console.log(result.show.image); /*toma! 💪*/
     const newTitle = document.createElement('h3');
     newLi.appendChild(newTitle);
     newTitle.innerHTML = result.show.name;
   }
+}
+
+// Función para añadir las imágenes de los respectivos <li>
+function insertImage(result, newLi) {
+  const newImage = document.createElement('img');
+  newLi.appendChild(newImage); //he creado una función para coger las imágenes del servidor correspondientes a cada iteración y la llamo dentro de la función paintShows.
+  //Ahora debería aplicar un condi
 }
 
 const button = document.querySelector('.js-button');
