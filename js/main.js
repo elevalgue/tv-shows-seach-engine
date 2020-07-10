@@ -24,18 +24,6 @@ function paintShows() {
   }
 }
 
-//Parto de este HTML
-/* <div class="search-results js-search-results">
-            <ul class="search-results-list js-search-results-list"></ul>
-    </div> */
-
-//Tengo guardar la info relativa a las series dentro de un <li></li> (lo puedo hacer con appenchild) y dentro de este contenedor...
-
-/*<div class"show__container">/
-    <h3> el nombre de la serie del json 'name'</h3>
-    <img del json 'image.medium'>
-</div>*/
-
 const button = document.querySelector('.js-button');
 const inputValue = document.getElementById(input);
 const favouriteList = document.querySelector('.js-favourite-list');
