@@ -7,10 +7,8 @@ let results = [];
 let favourites = [];
 
 //Constantes
-const button = document.querySelector('.js-button');
+const button = document.querySelector('.js-search-button');
 const inputValue = document.querySelector('.input').value;
-const favouriteList = document.querySelector('.js-favourite-list');
-const favList = document.querySelector('.js-favourite-titles-list');
 
 //Función que busca las series en el API (API request)
 function getShows() {
@@ -26,8 +24,8 @@ function getShows() {
 
 button.addEventListener('click', getShows);
 
-//Pinto la información que me devuelve el API
-const showsList = document.querySelector('.js-search-results-list');
+//Pinto la información que me devuelve el API en el DOM
+const showsList = document.querySelector('.js-results-list');
 function renderShows() {
   for (let result of results) {
     console.log(result.show.name);
@@ -38,10 +36,11 @@ function renderShows() {
     const newImage = document.createElement('img');
     insertImage(result, newLi);
     console.log(result.show.image); /*toma! 💪*/
-    const newTitle = document.createElement('h3');
+    const newTitle = document.createElement('h2');
     newLi.appendChild(newTitle);
     newTitle.innerHTML = result.show.name;
   }
+  //Escucho las series encontradas para poder añadirlas a los favoritos
 }
 
 // Función para añadir las imágenes de los respectivos <li>
@@ -54,6 +53,3 @@ function insertImage(result, newLi) {
     newImage.src = result.show.image.medium;
   }
 }
-
-//Escucho las series encontradas
-function addListenertoResults() {}

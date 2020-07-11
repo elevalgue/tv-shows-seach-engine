@@ -23,16 +23,21 @@
           type="text"
           placeholder="Busca tu serie aquí"
         />
-        <input class="button js-button" type="submit" value="Search" />
+        <input
+          class="search-button js-search-button"
+          type="submit"
+          value="Search"
+        />
       </form>
     </div>
-    <div class="favourite-list js-favourite-list">
-      <h2 class="favourite-titles">Mis series favoritas</h2>
-      <ul class="favourite-titles-list js-favourite-titles-list"></ul>
+    <div class="favourite-list-container">
+      <h2 class="favourite-list-title">Mis series favoritas</h2>
+      <ul class="favourite-list js-favourite-list"></ul>
       <!--Aquí pintaré las series que estén en favoritos-->
     </div>
-    <div class="search-results js-search-results">
-      <ul class="search-results-list js-search-results-list"></ul>
+    <div class="results-list-container">
+      <h2 class="results-list-title"></h2>
+      <ul class="results-list js-results-list"></ul>
       <!--Aquí pintaré las series que me lleguen del servidor-->
     </div>
     <script type="text/javascript" src="./js/main.js"></script>
