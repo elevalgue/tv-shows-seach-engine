@@ -18,6 +18,7 @@ function getShows() {
     .then((response) => response.json())
     .then((data) => {
       results = data; //aquí me estoy guardando toda la info del array
+
       renderShows();
     });
 }
@@ -40,7 +41,6 @@ function renderShows() {
     newLi.appendChild(newTitle);
     newTitle.innerHTML = result.show.name;
   }
-  //Escucho las series encontradas para poder añadirlas a los favoritos
 }
 
 // Función para añadir las imágenes de los respectivos <li>
@@ -53,3 +53,12 @@ function insertImage(result, newLi) {
     newImage.src = result.show.image.medium;
   }
 }
+//Escucho las series encontradas para poder añadirlas a los favoritos
+function listenRenderShows() {
+  const shows = document.querySelectorAll('.showItem');
+  for (let i = 0; 1 < results.length; i++) {
+    shows[i].listenRenderShows('click', addFav);
+  }
+  listenRenderShows();
+}
+//Añado series a los favoritos
