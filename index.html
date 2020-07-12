@@ -12,34 +12,46 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <h1>Buscador de series:</h1>
-    <div>
-      <form class="search-bar">
-        <label for="input"></label>
-        <input
-          class="input js-input-value"
-          id="input"
-          name="searchInput"
-          type="text"
-          placeholder="Busca tu serie aquí"
-        />
-        <input
-          class="search-button js-search-button"
-          type="submit"
-          value="Search"
-        />
-      </form>
+    <div class="grid-wrapper">
+      <header class="header">
+        <h1 class="header-title js-header-title">Buscador de series:</h1>
+        <form action="" class="search-bar js-search bar">
+          <label for="input">
+            <input
+              class="input js-input-value"
+              name="searchInput"
+              id="input"
+              value=""
+              type="text"
+              placeholder="Busca tu serie aquí"
+            />
+          </label>
+          <button
+            type="submit"
+            class="search-button js-search-button"
+            value="Search"
+          >
+            Botón
+          </button>
+        </form>
+      </header>
+      <main class="main">
+        <!-- "aside js hidden" -->
+        <div class="favourite-list-container">
+          <h2 class="favourite-list-title">Tus favoritas</h2>
+          <ul class="favourite-list js-favourite-list"></ul>
+          <!--Aquí pintaré las series que estén en favoritos-->
+        </div>
+        <section class="section">
+          <div class="results-list-container">
+            <h2 class="results-list-title">Resultados</h2>
+            <ul class="results-list js-results-list"></ul>
+            <!--Aquí pintaré las series que me lleguen del servidor-->
+          </div>
+        </section>
+      </main>
     </div>
-    <div class="favourite-list-container">
-      <h2 class="favourite-list-title">Mis series favoritas</h2>
-      <ul class="favourite-list js-favourite-list"></ul>
-      <!--Aquí pintaré las series que estén en favoritos-->
-    </div>
-    <div class="results-list-container">
-      <h2 class="results-list-title"></h2>
-      <ul class="results-list js-results-list"></ul>
-      <!--Aquí pintaré las series que me lleguen del servidor-->
-    </div>
+    <footer class="footer">Footer</footer>
     <script type="text/javascript" src="./js/main.js"></script>
   </body>
 </html>

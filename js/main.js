@@ -9,6 +9,8 @@ let favourites = [];
 //Constantes
 const button = document.querySelector('.js-search-button');
 const inputValue = document.querySelector('.input').value;
+const favouritesContainer = document.querySelector('.favourite-list-container');
+const resultsContainer = document.querySelector('.results-list-container');
 
 //Función que busca las series en el API (API request)
 function getShows() {
@@ -29,14 +31,14 @@ button.addEventListener('click', getShows);
 const showsList = document.querySelector('.js-results-list');
 function renderShows() {
   for (let result of results) {
-    console.log(result.show.name);
+    // console.log(result.show.name);
     //añado los li (container)
     const newLi = document.createElement('li');
     showsList.appendChild(newLi);
     //añado la imagen
     const newImage = document.createElement('img');
     insertImage(result, newLi);
-    console.log(result.show.image); /*toma! 💪*/
+    // console.log(result.show.image);
     const newTitle = document.createElement('h2');
     newLi.appendChild(newTitle);
     newTitle.innerHTML = result.show.name;
@@ -54,11 +56,37 @@ function insertImage(result, newLi) {
   }
 }
 //Escucho las series encontradas para poder añadirlas a los favoritos
+
+// function listenRenderShows() {
+//   const shows = document.querySelectorAll('.showItem');
+//   for (let index = 0; index < results.length; index++) {
+//     shows[index].listenRenderShows('click', saveFavourites);
+//   }
+//   listenRenderShows();
+// }
 function listenRenderShows() {
-  const shows = document.querySelectorAll('.showItem');
-  for (let i = 0; 1 < results.length; i++) {
-    shows[i].listenRenderShows('click', addFav);
+  const shows = document.querySelectorAll('.js-showItem');
+  for (const showItem of showList) {
+    showItem.addEventListener('click', saveFavourites);
   }
-  listenRenderShows();
 }
-//Añado series a los favoritos
+
+// const handlerShowsClick = (event) => {
+//   const clickedId = parseInt(event.currentTarget.id);
+//   const ShowFind = searchShows.find(
+//     (showItem) => showItem.show.id === clickedId
+//   );
+// };
+
+function saveFavourites(event) {
+  //identifico el elemento clicado
+  const clickedShowItemId = event.currentTarget.id;
+  const showItem = document.geElementById(clickedShowItemId);
+  showItem.classList.toggle('.favouriteShow');
+  const favouriteShowItem = results.find((result) => {
+    return result.show.id === parseInt(showItem.id);
+  });
+
+  //pusheo para agregar los item al final de array
+
+  // favourites.push(favouriteShowItem);
