@@ -10,47 +10,46 @@
     />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <script src="https://kit.fontawesome.com/16579ed8b0.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <div class="grid-wrapper">
-      <header class="header">
-        <h1 class="header-title js-header-title">Buscador de series:</h1>
-        <form action="" class="search-bar js-search bar">
-          <label for="input">
-            <input
-              class="input js-input-value"
-              name="searchInput"
-              id="input"
-              value=""
-              type="text"
-              placeholder="Busca tu serie aquí"
-            />
-          </label>
-          <button
-            type="submit"
-            class="search-button js-search-button"
-            value="Search"
-          >
-            Botón
-          </button>
-        </form>
-      </header>
+  <body class="body">
+    <header class="header">
+      <h1 class="header-title js-header-title">Buscador de series:</h1>
+      <form action="" class="search-bar js-search bar">
+        <label for="input">
+          <input
+            class="input js-input-value"
+            name="searchInput"
+            id="input"
+            value=""
+            type="text"
+            placeholder="Busca tu serie aquí"
+          />
+        </label>
+        <button
+          type="submit"
+          class="search-button js-search-button"
+          value="Search"
+        >
+          Botón
+        </button>
+      </form>
+    </header>
+    </div>
       <main class="main">
-        <!-- "aside js hidden" -->
-        <div class="favourite-list-container">
-          <h2 class="favourite-list-title">Tus favoritas</h2>
-          <ul class="favourite-list js-favourite-list"></ul>
-          <!--Aquí pintaré las series que estén en favoritos-->
+        <div class="favourites-list-container">
+        <!-- "section js hidden" -->
+          <h2 class="favourites-list-title">Tus favoritas</h2>
+          <ul class="favourites-list js-favourites-list"></ul>
         </div>
-        <section class="section">
-          <div class="results-list-container">
+          <!--Aquí pintaré las series que estén en favoritos-->
+        <div class="results-list-container">
             <h2 class="results-list-title">Resultados</h2>
             <ul class="results-list js-results-list"></ul>
             <!--Aquí pintaré las series que me lleguen del servidor-->
-          </div>
-        </section>
+            <!-- <i class="fas fa-trash-alt"></i> -->
+      </div>
       </main>
-    </div>
     <footer class="footer"></footer>
     <script type="text/javascript" src="./js/main.js"></script>
   </body>
