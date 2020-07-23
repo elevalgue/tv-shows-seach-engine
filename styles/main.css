@@ -102,10 +102,13 @@ li {
   padding: 15px;
   border-radius: 5px;
 }
-.blue-background {
-  background-color: #00203fff;
+.js-showItem {
   /* h2 {
     color: white; */
+}
+
+.favBackground {
+  background-color: violet;
 }
 .hidden {
   opacity: 0;

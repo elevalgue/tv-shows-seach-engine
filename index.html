@@ -10,11 +10,11 @@
     />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/main.css" />
-    <script src="https://kit.fontawesome.com/16579ed8b0.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/16579ed8b0.js" crossorigin="anonymous"></script> -->
   </head>
   <body class="body">
     <header class="header">
-      <h1 class="header-title js-header-title">Buscador de series:</h1>
+      <h1 class="header-title js-header-title">real show buff:</h1>
       <form action="" class="search-bar js-search bar">
         <label for="input">
           <input
@@ -31,7 +31,7 @@
           class="search-button js-search-button"
           value="Search"
         >
-          Botón
+          Busca
         </button>
       </form>
     </header>
@@ -39,13 +39,16 @@
       <main class="main">
         <div class="favourites-list-container">
         <!-- "section js hidden" -->
-          <h2 class="favourites-list-title">Tus favoritas</h2>
+          <h2 class="favourites-list-title js-favourites-list-title">Tus favoritas</h2>
           <ul class="favourites-list js-favourites-list"></ul>
         </div>
           <!--Aquí pintaré las series que estén en favoritos-->
         <div class="results-list-container">
             <h2 class="results-list-title">Resultados</h2>
             <ul class="results-list js-results-list"></ul>
+            <button class="resetButton js-reset-button " value="delete all favorites">
+              remove all favorites
+            </button>
             <!--Aquí pintaré las series que me lleguen del servidor-->
             <!-- <i class="fas fa-trash-alt"></i> -->
       </div>
@@ -54,3 +57,4 @@
     <script type="text/javascript" src="./js/main.js"></script>
   </body>
 </html>
+
