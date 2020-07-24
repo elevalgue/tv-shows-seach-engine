@@ -32,8 +32,6 @@ function renderShows() {
   //reset
   showsList.innerHTML = '';
   for (let result of results) {
-    ////////////////////////////HEEEEEEELP
-
     //añado li
     const newLi = document.createElement('li');
     showsList.appendChild(newLi);
@@ -74,6 +72,7 @@ function handleBackground() {
 }
 //results = objetos
 //resultsElement = es el item que se pinta en el dom
+
 //función para añadir imagen
 function insertImage(result, newLi) {
   const newImage = document.createElement('img');
@@ -114,7 +113,7 @@ const handleShowsClick = (event) => {
   handleBackground();
 };
 
-//Pinto los favoritos en el DOM
+/*-----PINTO LOS FAVORITOS EN EL DOM-----*/
 const favouritesList = document.querySelector('.js-favourites-list');
 
 function renderFavourites() {
@@ -159,7 +158,7 @@ const handleRemoveFavorite = (event) => {
   handleBackground();
 };
 
-//LOCAL STORAGE
+/*-----LOCAL STORAGE-----*/
 const updateLocalStorage = () => {
   localStorage.setItem('favourites', JSON.stringify(favourites));
 };
@@ -175,7 +174,7 @@ getFromDataStorage();
 renderShows();
 renderFavourites();
 
-//Reset all
+/*-----RESET ALL-----*/
 const resetButton = document.querySelector('.js-reset-button');
 function clearFavourites() {
   favourites = [];

@@ -13,6 +13,7 @@ body {
 ul {
   list-style-type: none;
   padding: 0;
+  flex-wrap: wrap;
 }
 .header {
   display: flex;
@@ -22,6 +23,7 @@ ul {
 }
 .header-title {
   font-size: 40px;
+  text-transform: uppercase;
   margin: 35px;
   color: white;
 }
@@ -41,7 +43,7 @@ ul {
 }
 .search-button {
   width: 100px;
-  background-color: #6ca6c1;
+  background-color: violet;
   border-radius: 5px;
   border: none;
   padding: 5px 0;
@@ -62,7 +64,7 @@ ul {
 }
 .favourite-list-title {
   font-size: 25px;
-  color: #00203fff;
+  color: rgb(61, 7, 82);
 }
 .favourite-list {
   display: flex;
@@ -103,8 +105,8 @@ li {
   border-radius: 5px;
 }
 .js-showItem {
-  /* h2 {
-    color: white; */
+  /* h2 { */
+  color: white;
 }
 
 .favBackground {
@@ -112,7 +114,4 @@ li {
 }
 .hidden {
   opacity: 0;
-}
-.fa {
-  color: black;
 }
