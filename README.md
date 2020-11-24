@@ -2,10 +2,9 @@
 ## Proyecto en fase de mejora
 
 
-- [ ] Migrar proyecto a plantilla a web starter kit
-- [ ] Implementación de estilos en SASS
+- [ ] Migrate the proyecto to a web starter kit template
+- [ ] Deploy SASS structure
 
-modulo-2-evaluacion-final-elevalgue created by GitHub Classroom
 
 This is the Module 2 final exam for the Adalab Front End Web Development Bootcamp. This module is all about Javascript so that's where the bulk of the project is.
 
