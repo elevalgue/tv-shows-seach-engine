@@ -1,10 +1,15 @@
 <main class="page__main">
-  <h2>Este es el starter kit de Adalab</h2>
-  <p>Lo usamos para aprender:</p>
-  <ul class="main__list">
-    <li>Sass</li>
-    <li>HTML partials</li>
-    <li>Gulp</li>
-    <li>y muchas cosas más</li>
-  </ul>
+  <section class="results-list__container">
+    <h2 class="results-list__title hidden">Resultados</h2>
+    <ul class="results-list js-results-list"></ul>
+  </section>
+
+  <section class="favs-list__container">
+    <h2 class="favs-list__title hidden">Favoritas</h2>
+    <ul class="favs-list js-favs-list"></ul>
+    <button class="favs-list__delete-button js-favs-list__delete-button hidden">
+      <i class="fa fa-trash"></i>
+      <span>Borrar todo</span>
+    </button>
+  </section>
 </main>
