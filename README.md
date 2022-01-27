@@ -2,7 +2,7 @@
 
 ## Proyecto en fase de mejora
 
-- [ ] Migrate the proyecto to a web starter kit template
+- [ ] Migrate the project to a web starter kit template
 - [ ] Deploy SASS structure
 
 This is the Module 2 final exam for the Adalab Front End Web Development Bootcamp. This module is all about Javascript so that's where the bulk of the project is.
