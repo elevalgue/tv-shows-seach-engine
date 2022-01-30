@@ -143,6 +143,6 @@ src
 - [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
 - [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
 
-## Falta algo:
+## Falta algo?
 
 Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de las issues o si te animas a mejorarlo mándanos un PR :)
