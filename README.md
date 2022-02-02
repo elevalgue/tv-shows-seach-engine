@@ -1,27 +1,4 @@
-# modulo-2-evaluacion-final-elevalgue
-
-## Proyecto en fase de mejora
-
-- [ ] Migrate the project to a web starter kit template
-- [ ] Deploy SASS structure
-
-This is the Module 2 final exam for the Adalab Front End Web Development Bootcamp. This module is all about Javascript so that's where the bulk of the project is.
-
-The assignment is to create a TV series search engine using the TVmaze open API. Minimum requirements include:
-
-- A text input box and submit button
-- Contact server and display results (a name and photo for each series, providing a placeholder photo if a series doesn't have its own)
-- Allow for a favorites list that can be created by clicking on each series we want to add to the list
-- Favoriting a series changes the background color of series in search results
-- Favorited series must be displayed in a favorites list section
-- Save favorites list in local storage
-
-As extras, we are given some suggestions:
-
-- The option to delete series from the favorites list (must update local storage too)
-- A delete all favorites button
-- The ability to delete a favorite by clicking on the series in the search results (resetting the background color)
-- Favorited series show up already marked in search results (background color changes are applied each time new search results are shown)
+![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
 
 # Adalab web starter kit
 
@@ -67,8 +44,8 @@ Este comando:
 - **Abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
 - También **observa** todos los ficheros que hay dentro de la carpeta `src/`, para que cada vez que modifiques un fichero **refresca tu página en Chrome**.
 - También **procesa los ficheros** HTML, SASS / CSS y JS y los **genera y guarda en la carpeta `public/`**. Por ejemplo:
-  - Convierte los ficheros SASS en CSS.
-  - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
+   - Convierte los ficheros SASS en CSS.
+   - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
 
 Después de ejecutar `npm start` ya puedes empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
 
@@ -92,7 +69,6 @@ Además, los comandos:
 ```bash
 npm run push-docs
 ```
-
 o
 
 ```bash

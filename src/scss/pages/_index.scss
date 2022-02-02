@@ -1,3 +1,26 @@
-.main__list {
-  padding-left: 2rem;
+html {
+  height: 100vh;
+}
+
+body {
+  min-height: 100%;
+  // font-family: $font-primary;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.3fr auto 0.3fr;
+  grid-template-areas:
+    'header header header header'
+    'favourites main main main'
+    'footer footer footer footer';
+
+  // @media screen and (max-width: $tablet) {
+  //   grid-template-columns: auto;
+  //   grid-template-rows: repeat(4, auto);
+  //   grid-template-areas:
+  //     'header'
+  //     'favourites'
+  //     'main'
+  //     'footer';
+  // }
 }

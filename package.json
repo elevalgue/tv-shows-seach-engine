@@ -1,9 +1,9 @@
 {
 	"name": "adalab-web-starter-kit",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"description": "Adalab web starter kit",
 	"dependencies": {
-		"browser-sync": "^2.26.13",
+		"browser-sync": "^2.26.12",
 		"del": "^5.1.0",
 		"eslint": "^7.1.0",
 		"gulp": "^4.0.2",
@@ -15,11 +15,13 @@
 		"gulp-notify": "*",
 		"gulp-plumber": "*",
 		"gulp-rename": "*",
-		"gulp-sass": "^4.1.0",
+		"gulp-sass": "^5.0.0",
 		"gulp-sourcemaps": "*",
 		"gulp-uglify-es": "^2.0.0",
 		"gulp-zip": "*",
-		"run-sequence": "*"
+		"node-sass": "^6.0.1",
+		"run-sequence": "*",
+		"sass": "^1.35.2"
 	},
 	"devDependencies": {
 		"lodash.template": ">=4.5.0"

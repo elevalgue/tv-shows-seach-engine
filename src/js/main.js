@@ -8,6 +8,7 @@ let favourites = [];
 const searchButton = document.querySelector('.js-search-button');
 const input = document.querySelector('.js-input');
 /*-----API REQUEST-----*/
+//1.
 function getShows(event) {
   event.preventDefault();
   const inputValue = input.value;

@@ -1,5 +1,7 @@
-.page__header {
+header {
+  grid-area: header;
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  flex-direction: column;
+  background-color: red;
+  width: 100vw;
 }

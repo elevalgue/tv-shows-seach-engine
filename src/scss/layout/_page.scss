@@ -1,7 +1,26 @@
-body {
-  padding: 2rem;
-  height: 100vh;
-  background: url("../images/logo-adalab.png") center center no-repeat
-    $color-white;
-  font-family: $font-main;
-}
+// html {
+//   height: 100vh;
+// }
+
+// body {
+//   min-height: 100%;
+//   // font-family: $font-primary;
+//   position: relative;
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   grid-template-rows: 0.3fr auto 0.3fr;
+//   grid-template-areas:
+//     'header header header header'
+//     'favourites main main main'
+//     'footer footer footer footer';
+
+//   // @media screen and (max-width: $tablet) {
+//   //   grid-template-columns: auto;
+//   //   grid-template-rows: repeat(4, auto);
+//   //   grid-template-areas:
+//   //     'header'
+//   //     'favourites'
+//   //     'main'
+//   //     'footer';
+//   // }
+// }
